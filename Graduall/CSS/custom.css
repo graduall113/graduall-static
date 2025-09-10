@@ -1,3 +1,6 @@
+/* === Import Elegant Font === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* Circles animation code */
 
 @keyframes animationFramesOne {
@@ -595,3 +598,200 @@ form {
   box-shadow: 0 0 6px rgba(255,74,110,0.25);
 }
 
+/* === Main Container with Soft Glass Effect === */
+#main.site-main {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 50px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+#main.site-main:hover {
+  transform: translateY(-3px);
+}
+
+/* === Title Styling === */
+.entry-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #161e2b;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* === Meta Styling === */
+.entry-meta {
+  font-size: 15px;
+  color: #53617e;
+  margin-bottom: 30px;
+}
+
+/* === Gallery Image Styling === */
+.wpa-block-gallery img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
+}
+.wpa-block-gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* === Thumbnail Navs === */
+.wpa-block-gallery-nav-container img {
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+.wpa-block-gallery-nav-container img:hover {
+  border-color: #6366f1;
+}
+
+/* === Price Badge with Gradient & Glow === */
+.wp-block-group .atw-inline-block {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #fff;
+  padding: 16px 36px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 60px;
+  box-shadow: 0 12px 25px rgba(139, 92, 246, 0.4);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+/* === Author Section === */
+.-adverts-single-author-avatar img {
+  border-radius: 50%;
+  border: 4px solid #e5e7eb;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.6);
+}
+.-adverts-single-author-name .atw-font-bold {
+  font-size: 20px;
+  color: #161e2b;
+}
+.-adverts-single-author-name .atw-text-gray-500 {
+  font-size: 14px;
+  color: #7b8794;
+}
+
+/* === Location Styling === */
+.wpadverts-cpt-data-table {
+  margin-top: 40px;
+}
+.wpadverts-cpt-data-table .atw-font-bold {
+  font-weight: 600;
+  color: #374151;
+  letter-spacing: 0.5px;
+}
+.wpadverts-cpt-data-table .atw-text-base {
+  color: #1f2937;
+  font-size: 16px;
+}
+
+/* === Description Section === */
+.wpadverts-cpt-data-table-text {
+  margin-top: 40px;
+}
+.wpadverts-cpt-data-table-text .atw-text-xl {
+  font-size: 24px;
+  font-weight: 700;
+  color: #161e2b;
+  margin-bottom: 12px;
+}
+.wpadverts-cpt-data-table-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+/* === Contact Button with Gradient & Hover === */
+.wpadverts-contact-reveal button {
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: #fff;
+  padding: 18px 32px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 30px;
+}
+.wpadverts-contact-reveal button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(59, 130, 246, 0.45);
+}
+
+/* === Contact Info Reveal Box === */
+.wpadverts-contact-reveal-box {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 25px;
+  border: 1px solid #e5e7eb;
+  display: block !important;
+  animation: fadeInUp 0.5s ease;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.wpadverts-reveal-value {
+  font-weight: 600;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+/* === Navigation Link Styling === */
+.post-navigation .nav-next a {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 17px;
+  color: #6366f1;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.post-navigation .nav-next a:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+/* === Hide Loading Icon Spinner === */
+.wpadverts-reveal-loader {
+  display: none !important;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  #main.site-main {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+  .entry-title {
+    font-size: 2.2rem;
+  }
+  .wp-block-group .atw-inline-block {
+    font-size: 1.4rem;
+    padding: 12px 24px;
+  }
+  .wpadverts-contact-reveal button {
+    font-size: 16px;
+    padding: 16px 24px;
+  }
+  .wpa-block-gallery img {
+    max-height: 350px;
+  }
+	.wpadverts-contact-reveal-box{
+		display:none;
+	}
+}
