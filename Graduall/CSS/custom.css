@@ -594,3 +594,151 @@ form {
   border-color: #ff4a6e;
   box-shadow: 0 0 6px rgba(255,74,110,0.25);
 }
+
+
+/* ===== Author + Price Section ===== */
+.wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px; /* horizontal margin kam */
+}
+
+/* Left: DP + Name */
+.wp-block-column:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+/* DP */
+.-adverts-single-author-avatar img {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+}
+
+/* Name & Published */
+.-adverts-single-author-name .atw-font-bold {
+    font-size: 1rem;
+}
+
+.-adverts-single-author-name .atw-text-gray-500 {
+    font-size: 0.8rem;
+}
+
+/* Right: Price */
+.wp-block-column:last-child .atw-inline-block {
+    display: inline-block;
+    width: auto !important;          /* auto width, sirf text ke around */
+    min-width: 0;         /* unnecessary width remove */
+    font-size: 1.2rem;
+    padding: 0.25rem 0.8rem; /* thoda padding, text ke andar fit ho jaye */
+    text-align: center;   /* center text inside badge */
+    white-space: nowrap;  /* price ek line me rahe */
+    border-radius: 10px;  /* rounded corner */
+    background-color: #ab0000; /* original color */
+    color: #fff;          /* text color */
+}
+
+/* ===== Gallery / Slider ===== */
+.wpa-block-gallery {
+    padding: 10px 0;
+}
+
+.wpa-block-gallery-slider a img {
+    max-height: 400px; /* responsive height */
+    object-fit: contain;
+}
+
+/* ===== Description & Content ===== */
+.wpadverts-cpt-data-table-text .atw-text-xl {
+    font-size: 1.2rem; 
+}
+
+.wpadverts-cpt-data-table-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ===== Contact Button ===== */
+.wpadverts-contact-reveal {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) { /* Tablet view */
+    .wp-block-columns {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 8px;
+    }
+    .wp-block-column:first-child {
+        flex: 1 1 60%;
+        gap: 8px;
+    }
+    .wp-block-column:last-child .atw-inline-block {
+        flex: 1 1 30%;
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+        text-align: right;
+    }
+    .-adverts-single-author-avatar img {
+        width: 40px;
+        height: 40px;
+    }
+    .-adverts-single-author-name .atw-font-bold {
+        font-size: 0.95rem;
+    }
+    .-adverts-single-author-name .atw-text-gray-500 {
+        font-size: 0.75rem;
+    }
+    .wpadverts-cpt-data-table-text .atw-text-xl {
+        font-size: 1.1rem;
+    }
+    .wpadverts-cpt-data-table-text p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile view */
+    .wp-block-columns {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 5px;
+    }
+    .wp-block-column:first-child {
+        flex-direction: row;
+        margin-bottom: 10px;
+        gap: 8px;
+    }
+    .wp-block-column:last-child .atw-inline-block {
+        text-align: left;
+        width: auto;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .-adverts-single-author-avatar img {
+        width: 35px;
+        height: 35px;
+    }
+    .-adverts-single-author-name .atw-font-bold {
+        font-size: 0.95rem;
+    }
+    .-adverts-single-author-name .atw-text-gray-500 {
+        font-size: 0.7rem;
+    }
+    .wpadverts-cpt-data-table-text .atw-text-xl {
+        font-size: 1rem;
+    }
+    .wpadverts-cpt-data-table-text p {
+        font-size: 0.9rem;
+    }
+    .wpadverts-contact-reveal {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
