@@ -743,5 +743,96 @@ form {
     }
 }
 
+.related-ads-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.related-ad {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(25% - 20px); /* 4 columns */
+    display: flex;
+    flex-direction: column;
+}
+
+.related-ad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.related-ad a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.related-ad-thumb img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.related-ad-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px;
+    color: #333333;
+}
+
+.related-ad-excerpt {
+    font-size: 14px;
+    color: #666666;
+    margin: 0 12px 12px 12px;
+    line-height: 1.4em;
+}
+
+@media (max-width: 1024px) {
+    .related-ad {
+        flex: 1 1 calc(33.33% - 20px); /* 3 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .related-ad {
+        flex: 1 1 calc(50% - 20px); /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .related-ad {
+        flex: 1 1 100%; /* 1 column */
+    }
+}
+
+.related-ad-thumb {
+    position: relative;
+}
+.related-ad-thumb::after {
+    content: "View Ad";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.related-ad:hover .related-ad-thumb::after {
+    opacity: 1;
+}
+
 
 
