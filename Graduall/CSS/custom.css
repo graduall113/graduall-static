@@ -742,6 +742,75 @@ form {
         padding: 0.5rem 0.8rem;
     }
 }
+@media (max-width: 768px) {
+  .advert-list, 
+  .adverts-list, 
+  .wp-adverts-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .advert-item, 
+  .adverts-list .adverts-listing, 
+  .wp-adverts-list .advert-item {
+    width: 100% !important;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Image fix */
+  .advert-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px; /* image aur heading ke beech space */
+  }
+
+  /* Heading */
+  .advert-item h3,
+  .adverts-list .advert-title,
+  .wp-adverts-list .advert-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 4px 0 6px; /* heading ke niche space */
+    color: #000;
+  }
+
+  /* Date */
+  .advert-item .advert-date,
+  .adverts-list .advert-date {
+    font-size: 12px;
+    color: #555;
+    margin: 0 0 6px; /* heading aur price ke beech gap */
+    order: 2;
+  }
+
+  /* Price */
+  .advert-item .advert-price,
+  .adverts-list .advert-price {
+    margin-top: 0;
+    margin-bottom: 6px; /* price ke niche thoda gap */
+    background: #d00000;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    order: 3;
+    position: static !important;
+    align-self: flex-start;
+  }
+}
+
 
 
 
