@@ -814,34 +814,160 @@ form {
 /*                            Login And Register Page                                */
 
 
-.grad-card{
-  max-width:420px;
-  margin:40px auto;
-  padding:28px;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(19,24,39,0.06);
-  background:linear-gradient(180deg,#fff,#f9fbff);
-  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+/* Wrapper design */
+form.login, form.register {
+  max-width: 380px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", sans-serif;
 }
-.grad-title{
-  margin:0 0 16px;
-  font-size:20px;
-  font-weight:700;
-  color:#111827;
-  text-align:center;
+
+/* Labels */
+form.login label, form.register label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
 }
-.grad-form{margin-top:10px;}
-.grad-label{display:block; font-size:13px; color:#374151; margin-bottom:6px;}
-.grad-input{width:100%; padding:10px; border:1px solid #e6e9ef; border-radius:8px; font-size:15px; outline:none;}
-.grad-input:focus{box-shadow:0 0 0 4px rgba(59,130,246,0.06); border-color:#3b82f6;}
-.grad-btn{width:100%; padding:10px; background:linear-gradient(90deg,#2563eb,#06b6d4); color:#fff; border:none; border-radius:10px; font-weight:600; cursor:pointer; font-size:15px;}
-.grad-btn:hover{opacity:0.95; transform:translateY(-1px); transition:all .15s ease;}
-.grad-errors{background:#fff6f6;border:1px solid #ffdede;padding:10px;border-radius:8px;color:#9b1c1c;margin-bottom:12px;}
-.grad-errors ul{margin:0;padding-left:18px;}
-.grad-msg{text-align:center;padding:8px;margin:0;}
-.grad-links{font-size:13px;margin-top:8px;text-align:center;}
-.grad-links a{color:#2563eb;text-decoration:none;}
-.grad-password-row{display:flex;gap:8px;align-items:center;}
-.grad-toggle-pass{padding:6px 8px;border-radius:8px;border:1px solid #e6e9ef;background:#fff;cursor:pointer;}
-@media(max-width:480px){.grad-card{margin:18px;padding:18px;}.grad-title{font-size:18px;}}
+
+/* Inputs */
+form.login input[type="text"],
+form.login input[type="email"],
+form.login input[type="password"],
+form.register input[type="text"],
+form.register input[type="email"],
+form.register input[type="password"] {
+  width: 100%;
+  padding: 12px 42px 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: all .2s ease;
+}
+
+form.login input:focus,
+form.register input:focus {
+  border-color: #ff5fa2;
+  box-shadow: 0 0 0 3px rgba(255,95,162,0.15);
+}
+
+/* Eye icon inside input */
+.pass-wrap {
+  position: relative;
+}
+.pass-wrap input {
+  padding-right: 42px;
+}
+.pass-wrap .toggle-pass {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  transition: 0.2s;
+  user-select: none;
+}
+.pass-wrap .toggle-pass:hover {
+  color: #ff5fa2;
+}
+
+/* Buttons */
+form.login button,
+form.register button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  background: linear-gradient(135deg, #ff5fa2, #ff4d88);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+form.login button:hover,
+form.register button:hover {
+  background: linear-gradient(135deg, #ff4d88, #ff5fa2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255,95,162,0.25);
+}
+
+/* Links (register/login switch) */
+form.login a, form.register a {
+  color: #ff4d88;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
+}
+form.login a:hover, form.register a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------- */
+/* ✅ Responsive Design */
+/* --------------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  form.login, form.register {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 28px;
+  }
+
+  form.login input,
+  form.register input {
+    font-size: 14px;
+    padding: 10px 38px 10px 12px;
+  }
+
+  form.login button,
+  form.register button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  form.login, form.register {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  form.login label,
+  form.register label {
+    font-size: 13px;
+  }
+
+  form.login input,
+  form.register input {
+    font-size: 13px;
+    padding: 9px 36px 9px 12px;
+  }
+
+  .pass-wrap .toggle-pass {
+    font-size: 16px;
+    right: 10px;
+  }
+
+  form.login button,
+  form.register button {
+    font-size: 13px;
+    padding: 9px;
+    border-radius: 10px;
+  }
+}
+
+
 
