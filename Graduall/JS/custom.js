@@ -10,32 +10,11 @@
 //   }
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("input[type='password']").forEach(input => {
-    // Wrap only if not already wrapped
-    if (!input.parentElement.classList.contains("pass-wrap")) {
-      let wrapper = document.createElement("div");
-      wrapper.classList.add("pass-wrap");
-
-      input.parentNode.insertBefore(wrapper, input);
-      wrapper.appendChild(input);
-
-      // Eye icon
-      let icon = document.createElement("span");
-      icon.classList.add("toggle-pass");
-      icon.innerHTML = "🙈"; // closed eye by default
-      wrapper.appendChild(icon);
-
-      // Toggle event
-      icon.addEventListener("click", function () {
-        if (input.type === "password") {
-          input.type = "text";
-          this.innerHTML = "👁"; // open eye
-        } else {
-          input.type = "password";
-          this.innerHTML = "🙈"; // closed eye
-        }
-      });
-    }
+jQuery(document).ready(function($){
+  // simple fade effect on form submit
+  $(".grad-form").on("submit", function(){
+    $(this).css("opacity","0.5");
   });
 });
+
+
