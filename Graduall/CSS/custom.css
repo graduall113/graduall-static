@@ -1054,4 +1054,76 @@ form.login a:hover, form.register a:hover {
   background: #f5f5f5;
 }
 
+/* === WP-ADVERTS DEFAULT IMAGE + CARD STYLE === */
+
+/* --- Card Wrapper --- */
+.advert-item {
+    border: none !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.advert-item:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* --- Image Box --- */
+.advert-img {
+    width: 100% !important;
+    aspect-ratio: 16/9 !important;
+    background-color: #f4f4f4 !important;
+    border-bottom: 1px solid #eee !important;
+    transition: transform 0.3s ease !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* --- Default Image (fallback) --- */
+.advert-img.graduall-default-img {
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: #fff !important;
+}
+
+/* --- Title --- */
+.advert-post-title a {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    color: #222 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+.advert-post-title a:hover {
+    color: #0073e6 !important;
+}
+
+/* --- Price Tag --- */
+.advert-price {
+    background: #ff4b5c !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    padding: 4px 10px !important;
+    font-size: 0.9rem !important;
+}
+
+/* --- Date --- */
+.advert-date {
+    font-size: 0.8rem !important;
+    color: #666 !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .advert-img { aspect-ratio: 16/9 !important; }
+}
+@media (max-width: 480px) {
+    .advert-img { aspect-ratio: 4/3 !important; }
+}
+
 
