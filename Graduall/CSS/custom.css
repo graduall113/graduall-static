@@ -1112,12 +1112,20 @@ form.login a:hover, form.register a:hover {
 
 /* --- Price Tag --- */
 .advert-price {
-    background: #ff4b5c !important;
-    color: #fff !important;
+    background: white !important;
+    color: black !important;
+	border:2px solid red !important;
     font-weight: 600 !important;
     border-radius: 6px !important;
     padding: 4px 10px !important;
     font-size: 0.9rem !important;
+	transition: red 1s ease-in-out !important;
+}
+
+.advert-price:hover {
+    background: red !important;
+    color: white !important;
+	border:2px solid red !important;
 }
 
 /* --- Date --- */
@@ -1133,6 +1141,7 @@ form.login a:hover, form.register a:hover {
 @media (max-width: 480px) {
     .advert-img { aspect-ratio: 4/3 !important; }
 }
+
 
 
 
