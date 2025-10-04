@@ -1106,6 +1106,10 @@ form.login a:hover, form.register a:hover {
 	color:black !important;
 }
 
+.adverts-search-form{
+	padding-bottom: 55px !important;
+}
+
 /* --- Price Tag --- */
 .advert-price {
     background: #ff4b5c !important;
@@ -1129,6 +1133,7 @@ form.login a:hover, form.register a:hover {
 @media (max-width: 480px) {
     .advert-img { aspect-ratio: 4/3 !important; }
 }
+
 
 
 
