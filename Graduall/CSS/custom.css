@@ -1140,7 +1140,9 @@ form.login a:hover, form.register a:hover {
 }
 @media (max-width: 480px) {
     .advert-img { aspect-ratio: 4/3 !important; }
+	.advert-date { display: block !important; }
 }
+
 
 
 
