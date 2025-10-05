@@ -1139,12 +1139,42 @@ form.login a:hover, form.register a:hover {
     .advert-img { aspect-ratio: 16/9 !important; }
 }
 @media (max-width: 480px) {
-    .advert-img { aspect-ratio: 4/3 !important; }
-	.advert-date { display: block !important; }
+
+    /* ✅ Ad image ratio perfect for mobile */
+    .advert-img {
+        aspect-ratio: 4/3 !important;
+        background-size: cover !important;
+        background-position: center !important;
+        border-radius: 10px !important;
+    }
+
+    /* ✅ Date full width visible below title/price */
+    .advert-date {
+        display: block !important;
+        width: 100% !important;
+        margin-top: 4px !important;
+        font-size: 0.8rem !important;
+        color: #777 !important;
+        text-align: left !important;
+    }
+
+    /* ✅ Title adjustment for smaller screens */
+    .advert-post-title a {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal !important;
+        font-size: 0.95rem !important;
+        line-height: 1.3;
+    }
+
+    /* ✅ Ensure price and title don't stick together */
+    .advert-price {
+        margin-top: 6px !important;
+        display: inline-block;
+    }
 }
-
-
-
-
 
 
