@@ -1177,4 +1177,19 @@ form.login a:hover, form.register a:hover {
     }
 }
 
+/*           Affiliate card title Line ....             */
+
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4em;
+  height: 2.8em; /* equal to 2 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
 
