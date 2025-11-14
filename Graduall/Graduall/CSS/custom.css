@@ -1,0 +1,606 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Circles animation code */
+
+@keyframes animationFramesOne {
+    0% {
+      transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    20% {
+      transform:  translate(73px,-1px)  rotate(36deg) ;
+    }
+    40% {
+      transform:  translate(141px,72px)  rotate(72deg) ;
+    }
+    60% {
+      transform:  translate(83px,122px)  rotate(108deg) ;
+    }
+    80% {
+      transform:  translate(-40px,72px)  rotate(144deg) ;
+    }
+    100% {
+      transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+  }
+  
+  @-webkit-keyframes animationFramesOne {
+    0% {
+      -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    20% {
+      -webkit-transform:  translate(73px,-1px)  rotate(36deg) ;
+    }
+    40% {
+      -webkit-transform:  translate(141px,72px)  rotate(72deg) ;
+    }
+    60% {
+      -webkit-transform:  translate(83px,122px)  rotate(108deg) ;
+    }
+    80% {
+      -webkit-transform:  translate(-40px,72px)  rotate(144deg) ;
+    }
+    100% {
+      -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+  }
+  
+  .animationFramesOne {
+      -webkit-animation: animationFramesOne 12s linear infinite;
+      animation: animationFramesOne 12s linear infinite;
+  }
+  .animationFramesOne.two {
+      -webkit-animation: animationFramesOne 20s linear infinite;
+      animation: animationFramesOne 20s linear infinite;
+  }
+  
+  
+  @keyframes contactSwimmer {
+  
+    0%,
+    100% {
+      -webkit-transform: translateX(0) translateY(0) rotate(0);
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+  
+    25%,
+    75% {
+      -webkit-transform: translateX(15px) translateY(20px) rotate(10deg);
+      transform: translateX(15px) translateY(20px) rotate(10deg);
+    }
+  
+    50% {
+      -webkit-transform: translateX(60px) translateY(35px) rotate(15deg);
+      transform: translateX(60px) translateY(35px) rotate(15deg);
+    }
+  }
+  
+  .contactSwimmer {
+      -webkit-animation-name: contactSwimmer;
+      animation-name: contactSwimmer;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+  }
+  
+  @keyframes rotateme {
+    from {
+      -webkit-transform: rotate(0deg);
+       transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rotateme {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  .rotateme {
+      -webkit-animation-name: rotateme;
+      animation-name: rotateme;
+      -webkit-animation-duration: 8s;
+      animation-duration: 8s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+  }
+
+  /* testinomial code */
+
+  /* ✅ Testimonials Section Scoped CSS */
+
+/* Style the carousel arrows */
+.testi-carousel .elementor-swiper-button {
+    background: white !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: black !important;
+    z-index: 10;
+  }
+  
+  /* Hover effect */
+  .testi-carousel .elementor-swiper-button:hover {
+    background: #f1f1f1 !important;
+    transform: scale(1.1);
+  }
+  
+  /* Left arrow position (half outside) */
+  .testi-carousel .elementor-swiper-button-prev {
+    left: -20px !important;
+  }
+  
+  /* Right arrow position (half outside) */
+  .testi-carousel .elementor-swiper-button-next {
+    right: -20px !important;
+  }
+  
+  /* Testimonial Card */
+  .testi-carousel .elementor-testimonial {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect on card */
+  .testi-carousel .elementor-testimonial:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  }
+  
+  /* Testimonial Text */
+  .testi-carousel .elementor-testimonial-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  /* Name + Title */
+  .testi-carousel .elementor-testimonial-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+  }
+  .testi-carousel .elementor-testimonial-job {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Avatar (client image) */
+  .testi-carousel .elementor-testimonial__image img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  /* Pagination Dots */
+  .testi-carousel .swiper-pagination-bullet {
+    background: #bbb !important;
+    opacity: 1 !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px !important;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  .testi-carousel .swiper-pagination-bullet-active {
+    background: #ff4d4d !important; /* Accent color */
+    transform: scale(1.3);
+  }
+  /* ✅ Testimonials Section Scoped CSS */
+  
+  /* Style the carousel arrows */
+  .testi-carousel .elementor-swiper-button {
+    background: white !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: black !important;
+    z-index: 10;
+  }
+  
+  /* Hover effect */
+  .testi-carousel .elementor-swiper-button:hover {
+    background: #f1f1f1 !important;
+    transform: scale(1.1);
+  }
+  
+  /* Left arrow position (half outside) */
+  .testi-carousel .elementor-swiper-button-prev {
+    left: -20px !important;
+  }
+  
+  /* Right arrow position (half outside) */
+  .testi-carousel .elementor-swiper-button-next {
+    right: -20px !important;
+  }
+  
+  /* Testimonial Card */
+  .testi-carousel .elementor-testimonial {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect on card */
+  .testi-carousel .elementor-testimonial:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  }
+  
+  /* Testimonial Text */
+  .testi-carousel .elementor-testimonial-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  /* Name + Title */
+  .testi-carousel .elementor-testimonial-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+  }
+  .testi-carousel .elementor-testimonial-job {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Avatar (client image) */
+  .testi-carousel .elementor-testimonial__image img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  /* Pagination Dots */
+  .testi-carousel .swiper-pagination-bullet {
+    background: #bbb !important;
+    opacity: 1 !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px !important;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  .testi-carousel .swiper-pagination-bullet-active {
+    background: #ff4d4d !important; /* Accent color */
+    transform: scale(1.3);
+  }
+
+  
+  /* Post Your Ad Page */
+
+  /* ===== Modern Form Styling for Graduall ===== */
+
+/* General form container */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 850px;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Labels */
+  form label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+    display: block;
+  }
+  
+  /* Inputs, dropdowns, textarea */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1.5px solid #e2e2e2;
+    margin-bottom: 20px;
+    background: #fafafa;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  form input:focus,
+  form select:focus,
+  form textarea:focus {
+    border-color: #ff4a6e;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 74, 110, 0.2);
+    outline: none;
+  }
+  
+  /* File upload box */
+  form .gallery {
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    background: #fafafa;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  form .gallery:hover {
+    border-color: #ff4a6e;
+    background: #fff;
+  }
+  
+  /* Description area */
+  form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  /* Section headers */
+  form h3,
+  form h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    border-left: 4px solid #ff4a6e;
+    padding-left: 10px;
+  }
+  
+  /* Preview button */
+  form input[type="submit"],
+  form .preview,
+  form button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4a6e, #ff7cae);
+    border: none;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 74, 110, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form input[type="submit"]:hover,
+  form .preview:hover,
+  form button:hover {
+    background: linear-gradient(135deg, #ff3360, #ff6699);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(255, 74, 110, 0.4);
+  }
+  
+  /* Responsive improvements */
+ 
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  }
+
+  /* Manage Page  */
+
+  /* Ad container styling */
+.advert-item {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    background: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin-bottom: 25px;
+}
+.advert-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* Image styling */
+.advert-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Title */
+.advert-title a {
+    font-size: 18px;
+    font-weight: 600;
+    color: red !important;
+    text-decoration: none;
+}
+.advert-title a:hover {
+    color: red;
+}
+
+/* Price badge */
+.advert-price {
+    display: inline-block;
+    background: transparent;
+    color: red;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Date and meta info */
+.advert-date {
+    color: black;
+    font-size: 13px;
+}
+
+/* Search bar */
+.adverts-search input[type="text"], 
+.adverts-search input[type="search"] {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: border-color 0.25s ease;
+}
+.adverts-search input[type="text"]:focus, 
+.adverts-search input[type="search"]:focus {
+    border-color: #ff3366;
+    outline: none;
+}
+.adverts-search input[type="submit"] {
+    background: #ff3366;
+    border: none;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+.adverts-search input[type="submit"]:hover {
+    background: #ff6699;
+}
+
+#post-1398{
+	border-radius:3%;
+	background-color:rgba(255, 0, 0, 0.039);
+	box-shadow:5px 10px 10px rgba(0, 0, 0, 0.11) , inset 5px 4px 10px rgba(0, 0, 0, 0.11);
+}
+
+
+/* 🎨 Modern Manage Ads Page Styling *//* === Modern Manage Ads Styling === */
+
+
+/* Each Ad Card */
+.wpa-result-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+  margin: 18px 0;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.wpa-result-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  background: #fafafa;
+}
+
+/* Image */
+.wpa-picture-grid img,
+.wpa-picture-list img {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 180px;
+  height: 140px;
+  border: 1px solid #eee;
+}
+
+/* Title */
+.wpa-result-title-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222 !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.wpa-result-title-text:hover {
+  color: #ff4a6e !important;
+  text-decoration: none;
+}
+
+/* Published Badge */
+.wpa-bulb-success {
+  background: #e6fff2;
+  color: #0f9d58;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* Manage Button */
+.wpa-btn-secondary {
+  background: linear-gradient(135deg, #ff4a6e, #ff7cae) !important;
+  color: #fff !important;
+  border: none !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(255,74,110,0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.wpa-btn-secondary:hover {
+  background: linear-gradient(135deg, #ff3360, #ff6699) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,74,110,0.35);
+}
+
+/* Sort By Dropdown */
+#js-wpa-sort {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  transition: 0.2s ease-in-out;
+}
+
+#js-wpa-sort:hover {
+  background: #fff;
+  border-color: #ff4a6e;
+  box-shadow: 0 0 6px rgba(255,74,110,0.25);
+}
+
