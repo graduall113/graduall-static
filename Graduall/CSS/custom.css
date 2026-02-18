@@ -329,7 +329,15 @@ Recent Blogs Shortcode - GitHub CSS
         padding-left: 15px;
         padding-right: 15px;
     }
-  #rank-math-toc nav ul{
-    margin-left:0px !important;
+  
+  #rank-math-toc ul {
+    margin-left: 0 !important;
+    padding-left: 18px !important;
+  }
+
+  #rank-math-toc li {
+    margin-left: 0 !important;
+  }
+
 }
-}
+
