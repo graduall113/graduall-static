@@ -330,7 +330,6 @@ Recent Blogs Shortcode - GitHub CSS
         padding-right: 15px;
     }
   #rank-math-toc nav ul{
-    margin:0px !important;
+    margin-left:0px !important;
 }
-
-
+}
