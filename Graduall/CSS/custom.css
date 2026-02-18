@@ -245,6 +245,7 @@ Recent Blogs Shortcode - GitHub CSS
 
 .single-post .ast-container {
     max-width: 850px;
+    margin: 0 auto;
 }
 
 /* Article Title */
@@ -320,4 +321,13 @@ Recent Blogs Shortcode - GitHub CSS
     .single-post .entry-content p {
         font-size: 15px;
     }
+  
+   .single-post .ast-container {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
