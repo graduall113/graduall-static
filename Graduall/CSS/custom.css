@@ -331,19 +331,3 @@ Recent Blogs Shortcode - GitHub CSS
     }
 }
 
-/* Posts Tables Horizontal Scroll */
-
-/* Horizontal scroll for tables */
-.table-scroll {
-  overflow-x: auto !important;
-}
-
-.table-scroll table {
-  min-width: 600px !important; /* adjust as per your table */
-  border-collapse: collapse !important;
-}
-
-.table-scroll {
-  -webkit-overflow-scrolling: touch !important;
-}
-
