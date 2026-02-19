@@ -333,18 +333,23 @@ Recent Blogs Shortcode - GitHub CSS
 
 /* Responsive Posts Tables */
 
-@media (max-width: 768px) {
-
-  .wp-block-table {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    display: block !important;
+/* Responsive Table*/
+@media screen and (max-width: 480px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
-  .wp-block-table table {
-    width: 600px !important;
+  table::-webkit-scrollbar {
+    height: 8px;
   }
-
+  table::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  table::-webkit-scrollbar-track {
+    background: #f4f4f4; 
+  }
 }
 
