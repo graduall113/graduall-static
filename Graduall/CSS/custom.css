@@ -329,8 +329,20 @@ Recent Blogs Shortcode - GitHub CSS
         padding-left: 15px;
         padding-right: 15px;
     }
-
 }
 
+/* Posts Tables Horizontal Scroll */
 
+/* Horizontal scroll for tables */
+.table-scroll {
+  overflow-x: auto;
+}
 
+.table-scroll table {
+  min-width: 600px; /* adjust as per your table */
+  border-collapse: collapse;
+}
+
+.table-scroll {
+  -webkit-overflow-scrolling: touch;
+}
