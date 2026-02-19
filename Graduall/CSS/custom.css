@@ -333,17 +333,17 @@ Recent Blogs Shortcode - GitHub CSS
 
 /* Responsive Posts Tables */
 
-/* Make ALL Gutenberg tables scrollable on mobile */
 @media (max-width: 768px) {
 
   .wp-block-table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    display: block !important;
   }
 
   .wp-block-table table {
-    min-width: 600px;
+    width: 600px !important;
   }
 
 }
