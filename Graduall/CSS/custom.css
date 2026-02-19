@@ -335,14 +335,15 @@ Recent Blogs Shortcode - GitHub CSS
 
 /* Horizontal scroll for tables */
 .table-scroll {
-  overflow-x: auto;
+  overflow-x: auto !important;
 }
 
 .table-scroll table {
-  min-width: 600px; /* adjust as per your table */
-  border-collapse: collapse;
+  min-width: 600px !important; /* adjust as per your table */
+  border-collapse: collapse !important;
 }
 
 .table-scroll {
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch !important;
 }
+
