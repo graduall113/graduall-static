@@ -333,16 +333,15 @@ Recent Blogs Shortcode - GitHub CSS
 
 /* Responsive Posts Tables */
 
-/* Force horizontal scroll */
-.responsive-table {
-  width: 100%;
+.wp-block-table {
   overflow-x: auto !important;
   display: block !important;
 }
 
-.responsive-table table {
+.wp-block-table table {
   width: max-content !important;
-  min-width: 600px;
-  border-collapse: collapse;
+  min-width: 600px !important;
 }
+
+
 
